@@ -68,8 +68,6 @@
   padding: 4px 10px;
 }
 
-/* блок с картинкой */
-
 .card__image {
   position: relative;
   border-block-start: 2px solid var(--text-color);
@@ -103,8 +101,6 @@
   mix-blend-mode: hard-light;
 }
 
-/* Фильтры */
-
 .saturate {
   filter: saturate(20%) sepia(40%);
 }
@@ -129,8 +125,6 @@
   filter: brightness(0.5) grayscale(100%);
 }
 
-/* блок с текстом */
-
 .card__block-text {
   padding: 25px;
   font-size: var(--font-main);
@@ -144,8 +138,6 @@
 .card__text {
   margin-block-end: 25px;
 }
-
-/* Кнопки */
 
 .card__button-block {
   display: flex;
@@ -239,8 +231,6 @@
 .floppy {
   flex-shrink: 0;
 }
-
-/*стили всплывающего окна */
 
 .dialog[open] {
   display: flex;
