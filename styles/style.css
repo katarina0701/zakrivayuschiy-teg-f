@@ -4,7 +4,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main);
-  font-variation-settings: var(--font-accent);
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   color: var(--text-color);
@@ -55,7 +54,7 @@
 .card__title {
   font-family: var(--font-main);
   font-size: 18px;
-  font-weight: 710;
+  font-variation-settings: "wght" 710;
   padding: 4px 12px;
 }
 
@@ -64,7 +63,9 @@
   position: relative;
   border-block-start: var(--border-box);
   border-block-end: var(--border-box);
-  block-size: 100vw; min-height: 375px; max-height: 700px;
+  block-size: 100vw;
+  min-height: 375px;
+  max-height: 700px;
 }
 
 .picture {
@@ -91,6 +92,10 @@
   font-weight: 400;
   text-transform: uppercase;
   mix-blend-mode: hard-light;
+}
+
+.contrast {
+  filter: contrast(150%);
 }
 
 .saturate {
@@ -120,12 +125,11 @@
 .card__block-text {
   padding: 25px;
   padding-block-end: 22px;
-  font-size: var(--font-main);
+  font-family: var(--font-main);
   color: var(--text-color);
-  font-weight: 410px;
+  font-variation-settings: "wght" 410px;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 410;
 }
 
 .card__text {
