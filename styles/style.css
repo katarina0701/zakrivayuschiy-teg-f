@@ -123,17 +123,15 @@
 }
 
 .card__block-text {
+  display: flex;
+  flex-direction: column;
   padding: 25px;
-  padding-block-end: 22px;
+  gap: 25px;
   font-family: var(--font-main);
   color: var(--text-color);
   font-variation-settings: "wght" 410px;
   font-size: 18px;
   line-height: 21px;
-}
-
-.card__text {
-  margin-block-end: 25px;
 }
 
 .card__button-block {
@@ -161,6 +159,7 @@
 
 .card__icon-button:focus-visible {
   border-color: var(--contour-color);
+  outline: none;
 }
 
 .card__like-button {
@@ -207,11 +206,11 @@
 .button:focus-visible {
   box-shadow: 2px 2px 0 #000000;
   transition: box-shadow 0.3s ease;
+  outline: none;
 }
 
 .button-save {
   display: flex;
-  position: relative;
   justify-content: center;
   background-color: var(--bg-color);
   border: var(--border-box);
@@ -260,7 +259,6 @@
 }
 
 .button__dialog {
-  position: relative;
   border: var(--border-box);
   inline-size: 100%;
   padding: 12.5px 0px;
@@ -271,7 +269,7 @@ dialog::backdrop {
   background-color: rgba(0 0 0 / 0.75);
 }
 
-@supports((text-stroke: 1px #000000) or (-webkit-text-stroke: 1px #000000)) {
+@supports((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .card__image-label {
     -webkit-text-stroke: var(--bg-color);
     text-stroke: 1px var(--bg-color);
