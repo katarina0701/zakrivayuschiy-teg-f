@@ -9,6 +9,7 @@
   color: var(--text-color);
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: 'wght' var(--font-body);
 }
 
 .header {
@@ -54,7 +55,7 @@
 .card__title {
   font-family: var(--font-main);
   font-size: 18px;
-  font-variation-settings: "wght" 710;
+  font-variation-settings: "wght" var(--font-card-title);
   padding: 4px 12px;
 }
 
@@ -128,7 +129,6 @@
   gap: 25px;
   font-family: var(--font-main);
   color: var(--text-color);
-  font-variation-settings: "wght" 410px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -204,21 +204,22 @@
   transform: translateX(0%);
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:focus-visible {
   box-shadow: 2px 2px 0 #000000;
   transition: box-shadow 0.3s ease;
-  outline: none;
 }
 
 .button-save {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-color);
   border: var(--border-box);
-  align-items: center;
   gap: 8px;
-  padding: 5px 18px;
+  padding: 6px 18px;
   margin: auto;
   overflow: hidden;
 }

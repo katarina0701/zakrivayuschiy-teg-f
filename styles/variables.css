@@ -2,6 +2,8 @@
 :root {
     --font-main:'Inter-Variable', sans-serif;
     --font-accent: 'PressStart2P', fantasy;
+    --font-card-title: 710;
+    --font-body: 410;
     --bg-color: #ffffff;
     --bg-image:
         repeating-linear-gradient(to right, #d3d3d3 0, #d3d3d3 2px, transparent 2px, transparent 4px),
