@@ -150,13 +150,13 @@
   block-size: 38px;
   padding: 0;
   background-color: var(--bg-color);
-  border: none;
-  transition: border-color 0.3s ease;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
   cursor: pointer;
 }
 
 .card__icon-button:focus {
-  border: none;
+  outline: none;
 }
 
 .card__icon-button:focus-visible {
